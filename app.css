@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.vh{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logoMenu{}
+.animatedLogo{
+    position: relative;
+    width: 600px;
+    height: 600px;
+} 
+.animatedLogo svg{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.animatedLogo img{
+    width: 100%;
+     width: 600px;
+}
+ 
+.ball {
+    position: absolute;
+    width: 20px;
+    height: 20px; 
+    border-radius: 50%;
+    overflow: hidden;
+}
+.ball::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    background-color: #000000; 
+    position: absolute;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); 
+    opacity: 0;
+    transform: scale(0.4);
+    border-radius: 50%;
+
+}
+.ball:hover::after{  
+    opacity: 1;
+    transform: scale(1);
+
+}
+.ball1 {
+    top: 28.2%;
+    left: 41.5%;
+    transform: translate(-41.5%, -28.2%);
+}
+.ball2{
+    top: 28.2%;
+    right: 39.8%;
+    transform: translate(39.8%, -28.2%);
+}
+
+
+
+.ball3 {
+    top: 41.35%;
+    right: 26.6%;
+    transform: translate(26.6%, -41.35%);
+}
+.ball4 {
+    bottom: 40%;
+    right: 26.7%;
+    transform: translate(26.7%,  40%);
+}
+.ball5 {
+    bottom: 26.7%;
+    right: 39.8%;
+    transform: translate(39.8%, 26.7%);
+}
+.ball6 {
+    bottom: 26.7%;
+    left: 41.5%;
+    transform: translate(-41.5%, 26.7%);
+}
+
+
+.ball7 {
+    bottom: 40%;
+    left: 28.26%;
+    transform: translate(-28.26%,  40%);
+}
+.ball8{
+    top: 41.3%;
+    left: 28.26%;
+    transform: translate(-28.26%, -41.3%);
+}
+
+.logoMenu {
+    position: relative;
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Move{ 
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+ }
+ .menuBox {
+    background: white;
+    z-index: 1;
+    padding: 0 20px;
+ }
+ .menuBox h3{
+    font-size:20px ;
+    font-weight: 400;
+}
+.menuBox p{
+    font-size: 17px;
+    max-width: 160px;
+    font-weight: 400;
+    color: #5c5c5c;
+}
+
+.menu {
+    position: absolute;
+    max-width: 470px;
+    width: 100%;
+    display: flex;
+     opacity: 0; 
+     transition: all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.menu.active{
+    opacity: 1; 
+
+}
+.menu1{
+    top: 6%;
+    left: 0;
+    justify-content: flex-start;
+}
+.menu2{
+    top: 6%;
+    right: 0;
+    justify-content: flex-end;
+}
+.menu3 {
+    top: 20%;
+    right: 0%;
+    justify-content: flex-end;
+}
+.menu4 {
+    bottom: 6%;
+    right: 0%;
+    justify-content: flex-end;
+}
+.menu5 {
+    bottom: -10%;
+    right: 0%;
+    justify-content: flex-end;
+}
+.menu6 {
+    bottom: -10%;
+    left: 0%;
+    justify-content: flex-start;
+}
+.menu7 {
+    bottom: 5%;
+    left: 0%;
+    justify-content: flex-start;
+}
+.menu8 {
+    top: 20%;
+    left: 0;
+    justify-content: flex-start;
+}
+
+.menu1::before, 
+.menu2::before, 
+.menu3::before, 
+.menu4::before, 
+.menu5::before, 
+.menu6::before, 
+.menu7::before, 
+.menu8::before{
+    content: "";
+    position: absolute;
+    width: 65%;
+    height: 100%;
+    border-style: solid;
+    border-color: black;
+}
+.menu1::before {
+    right: -15%;
+    top: 10px;
+    transform: skewX(40deg);
+    border-width: 1px 1px 0 0;
+}
+
+.menu2::before {
+    left: -13%;
+    top: 10px;
+    transform: skewX(-40deg);
+    border-width: 1px 0 0 1px;
+}
+.menu3::before {
+    left: 5%;
+    top: 10px;
+    transform: skewX(-40deg);
+    border-width: 1px 0 0 1px;
+}
+ 
+.menu4::before {
+    left: 5%;
+    bottom: 85%;
+    transform: skewX(40deg) rotateX(180deg);
+    border-width: 1px 0px 0 1px;
+}
+ 
+.menu5::before {
+    left: -13%;
+    bottom: 85%;
+    transform: skewX(40deg) rotateX(180deg);
+    border-width: 1px 0px 0 1px;
+}
+ 
+.menu6::before {
+    right: -13%;
+    bottom: 85%;
+    transform: skewX(-40deg) rotateX(180deg);
+    border-width: 1px 1px 0 0;
+}
+ 
+.menu7::before {
+    right: 0%;
+    bottom: 85%;
+    transform: skewX(-40deg) rotateX(180deg);
+    border-width: 1px 1px 0 0;
+}
+.menu8::before {
+    right: 2%;
+    top: 10px;
+    transform: skewX(40deg);
+    border-width: 1px 1px 0 0;
+}
+ 
