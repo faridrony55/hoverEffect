@@ -112,10 +112,12 @@
     background: white;
     z-index: 1;
     padding: 0 20px;
+    text-decoration: none;
  }
  .menuBox h3{
     font-size:20px ;
     font-weight: 400;
+    color: #333;
 }
 .menuBox p{
     font-size: 17px;
@@ -141,6 +143,7 @@
     left: 0;
     justify-content: flex-start;
 }
+
 .menu2{
     top: 6%;
     right: 0;
@@ -176,6 +179,21 @@
     left: 0;
     justify-content: flex-start;
 }
+
+
+.menu1, .menu7, .menu8, .menu6{
+    text-align: right;
+
+}
+.menu1 .menuBox,
+.menu7 .menuBox,
+.menu8 .menuBox,
+.menu6 .menuBox  {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 
 .menu1::before, 
 .menu2::before, 
@@ -245,4 +263,20 @@
     transform: skewX(40deg);
     border-width: 1px 1px 0 0;
 }
- 
+.arrowRight{
+    width:20px; 
+    transform: rotate(40deg);
+    margin-top: 10px;
+} 
+.logoText {
+    position: absolute;
+    bottom: -18%;
+    right: 50%;
+    transform: translate(50%, 18%);
+}
+
+@media(max-width: 767px){
+    .logoMenu{
+        display: none;
+    }
+}
