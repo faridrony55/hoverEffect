@@ -13,6 +13,7 @@
     position: relative;
     width: 600px;
     height: 600px;
+    z-index: 9999;
 } 
 .animatedLogo svg{
     width: 100%;
@@ -131,8 +132,8 @@
     max-width: 470px;
     width: 100%;
     display: flex;
-     opacity: 0; 
-     transition: all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    opacity: 0;
+    transition: all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .menu.active{
     opacity: 1; 
@@ -155,23 +156,23 @@
     justify-content: flex-end;
 }
 .menu4 {
-    bottom: 6%;
+    bottom: -20%;
     right: 0%;
     justify-content: flex-end;
 }
 .menu5 {
-    bottom: -10%;
-    right: 0%;
+    bottom: -24%;
+    right: 1%;
     justify-content: flex-end;
 }
 .menu6 {
-    bottom: -10%;
+    bottom: -5%;
     left: 0%;
     justify-content: flex-start;
 }
 .menu7 {
-    bottom: 5%;
-    left: 0%;
+    bottom: -19%;
+    left: -3%;
     justify-content: flex-start;
 }
 .menu8 {
@@ -206,7 +207,7 @@
     content: "";
     position: absolute;
     width: 65%;
-    height: 100%;
+    height: 85%;
     border-style: solid;
     border-color: black;
 }
@@ -275,8 +276,48 @@
     transform: translate(50%, 18%);
 }
 
+
+.phoneMenu{
+    padding:50px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.phoneMenu .mobilemenu{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.phoneMenu .mobilemenu img{
+    max-width: 200px;
+}
+.phoneMenu .mobilemenu ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+    gap: 5px;
+}
+.phoneMenu .mobilemenu a{
+text-decoration: none;
+font-size: 16px;
+color: #000000;
+}
+.phoneMenu .mobilemenu a:hover{
+    text-decoration: underline;
+}
+.phoneMenu{
+    display: none;
+}
 @media(max-width: 767px){
-    .logoMenu{
+    .vh{
         display: none;
+    }
+    .phoneMenu{
+        display: flex;
     }
 }
