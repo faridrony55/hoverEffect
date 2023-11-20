@@ -7,12 +7,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 .logoMenu{}
 .animatedLogo{
     position: relative;
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 352px;
     z-index: 9999;
 } 
 .animatedLogo svg{
@@ -39,13 +40,12 @@
     height: 100%;
     bottom: 0;
     right: 0;
-    background-color: #000000; 
+    background-color: #000000;
     position: absolute;
-    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); 
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     opacity: 0;
     transform: scale(0.4);
     border-radius: 50%;
-
 }
 .ball:hover::after{  
     opacity: 1;
@@ -53,49 +53,49 @@
 
 }
 .ball1 {
-    top: 28.2%;
-    left: 41.5%;
-    transform: translate(-41.5%, -28.2%);
+    top: 18.2%;
+    left: 41.4%;
+    transform: translate(-41.4%, -18.2%);
 }
 .ball2{
-    top: 28.2%;
+    top: 18.2%;
     right: 39.8%;
-    transform: translate(39.8%, -28.2%);
+    transform: translate(39.8%, -18.2%);
 }
 
 
 
 .ball3 {
-    top: 41.35%;
-    right: 26.6%;
-    transform: translate(26.6%, -41.35%);
+    top: 37.6%;
+    right: 26.5%;
+    transform: translate(26.5%, -37.6%);
 }
 .ball4 {
-    bottom: 40%;
-    right: 26.7%;
-    transform: translate(26.7%,  40%);
+    bottom: 35.4%;
+    right: 26.5%;
+    transform: translate(26.5%,  35.4%);
 }
 .ball5 {
-    bottom: 26.7%;
+    bottom: 16%;
     right: 39.8%;
-    transform: translate(39.8%, 26.7%);
+    transform: translate(39.8%, 16%);
 }
 .ball6 {
-    bottom: 26.7%;
+    bottom: 16.2%;
     left: 41.5%;
-    transform: translate(-41.5%, 26.7%);
+    transform: translate(-41.5%, 16.2%);
 }
 
 
 .ball7 {
-    bottom: 40%;
-    left: 28.26%;
-    transform: translate(-28.26%,  40%);
+    bottom: 35.5%;
+    left: 28.1%;
+    transform: translate(-28.1%,  35.5%);
 }
 .ball8{
-    top: 41.3%;
-    left: 28.26%;
-    transform: translate(-28.26%, -41.3%);
+    top: 37.7%;
+    left: 28.1%;
+    transform: translate(-28.1%, -37.7%);
 }
 
 .logoMenu {
@@ -105,6 +105,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 .Move{ 
     transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -140,44 +141,44 @@
 
 }
 .menu1{
-    top: 6%;
+    top: -25%;
     left: 0;
     justify-content: flex-start;
 }
 
 .menu2{
-    top: 6%;
+    top: -20%;
     right: 0;
     justify-content: flex-end;
 }
 .menu3 {
-    top: 20%;
+    top: 2%;
     right: 0%;
     justify-content: flex-end;
 }
 .menu4 {
-    bottom: -20%;
+    bottom: -55%;
     right: 0%;
     justify-content: flex-end;
 }
 .menu5 {
-    bottom: -24%;
-    right: 1%;
+    bottom: -65%;
+    right: 0%;
     justify-content: flex-end;
 }
 .menu6 {
-    bottom: -5%;
-    left: 0%;
+    bottom: -35%;
+    left: 2%;
     justify-content: flex-start;
 }
 .menu7 {
-    bottom: -19%;
-    left: -3%;
+    bottom: -65%;
+    left: -1%;
     justify-content: flex-start;
 }
 .menu8 {
-    top: 20%;
-    left: 0;
+    top: -7%;
+    left: 10px;
     justify-content: flex-start;
 }
 
@@ -225,7 +226,7 @@
     border-width: 1px 0 0 1px;
 }
 .menu3::before {
-    left: 5%;
+    left: 0%;
     top: 10px;
     transform: skewX(-40deg);
     border-width: 1px 0 0 1px;
@@ -270,12 +271,24 @@
     margin-top: 10px;
 } 
 .logoText {
-    position: absolute;
-    bottom: -18%;
-    right: 50%;
-    transform: translate(50%, 18%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+    text-align: center;
 }
-
+.logoText img{
+        height: 125px;
+        width: 100%;
+        object-fit: cover;
+}
+.logoText p {
+    font-size: 19px;
+    margin-bottom: 11px;
+    font-weight: 300;
+    max-width: 500px;
+    font-family: helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif;
+}
 
 .phoneMenu{
     padding:50px ;
