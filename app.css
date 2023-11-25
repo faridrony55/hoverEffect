@@ -134,10 +134,12 @@
     width: 100%;
     display: flex;
     opacity: 0;
+    visibility: hidden;
     transition: all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .menu.active{
     opacity: 1; 
+    visibility:visible;
 
 }
 .menu1{
@@ -332,5 +334,15 @@ color: #000000;
     }
     .phoneMenu{
         display: flex;
+    }
+    .logoText{
+        margin-bottom: 20px;
+    }
+    .logoText p {
+        font-size: 14px;
+        margin-bottom: 10px;
+        font-weight: 300;
+        max-width: 500px;
+        font-family: helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif;
     }
 }
