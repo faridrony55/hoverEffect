@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Code Pro', monospace;
+}
+body{
+    font-family: 'Source Code Pro', monospace;
+}
+.vh{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.logoMenu{}
+.animatedLogo{
+    position: relative;
+    width: 500px;
+    height: 352px;
+    z-index: 9999;
+} 
+.animatedLogo svg{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.animatedLogo img{
+    width: 100%;
+     width: 600px;
+}
+ 
+.ball {
+    position: absolute;
+    width: 20px;
+    height: 20px; 
+    border-radius: 50%;
+    overflow: hidden;
+}
+.ball::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    background-color: #000000;
+    position: absolute;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    opacity: 0;
+    transform: scale(0.4);
+    border-radius: 50%;
+}
+.ball:hover::after{  
+    opacity: 1;
+    transform: scale(1);
+
+}
+.ball1 {
+    top: 18.2%;
+    left: 41.4%;
+    transform: translate(-41.4%, -18.2%);
+}
+.ball2{
+    top: 18.2%;
+    right: 39.8%;
+    transform: translate(39.8%, -18.2%);
+}
+
+
+
+.ball3 {
+    top: 37.6%;
+    right: 26.5%;
+    transform: translate(26.5%, -37.6%);
+}
+.ball4 {
+    bottom: 35.4%;
+    right: 26.5%;
+    transform: translate(26.5%,  35.4%);
+}
+.ball5 {
+    bottom: 16%;
+    right: 39.8%;
+    transform: translate(39.8%, 16%);
+}
+.ball6 {
+    bottom: 16.2%;
+    left: 41.5%;
+    transform: translate(-41.5%, 16.2%);
+}
+
+
+.ball7 {
+    bottom: 35.5%;
+    left: 28.1%;
+    transform: translate(-28.1%,  35.5%);
+}
+.ball8{
+    top: 37.7%;
+    left: 28.1%;
+    transform: translate(-28.1%, -37.7%);
+}
+
+.logoMenu {
+    position: relative;
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Move{ 
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+ }
+ .menuBox {
+    background: white;
+    z-index: 1;
+    padding: 0 20px;
+    text-decoration: none;
+ }
+ .menuBox h3{
+    font-size:20px ;
+    font-weight: 400;
+    color: #333;
+}
+.menuBox p{
+    font-size: 17px;
+    max-width: 160px;
+    font-weight: 400;
+    color: #5c5c5c;
+}
+
+.menu {
+    position: absolute;
+    max-width: 470px;
+    width: 100%;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.menu.active{
+    opacity: 1; 
+    visibility:visible;
+
+}
+.menu1{
+    top: -25%;
+    left: 0;
+    justify-content: flex-start;
+}
+
+.menu2{
+    top: -20%;
+    right: 0;
+    justify-content: flex-end;
+}
+.menu3 {
+    top: 2%;
+    right: 0%;
+    justify-content: flex-end;
+}
+.menu4 {
+    bottom: -55%;
+    right: 0%;
+    justify-content: flex-end;
+}
+.menu5 {
+    bottom: -65%;
+    right: 0%;
+    justify-content: flex-end;
+}
+.menu6 {
+    bottom: -35%;
+    left: 2%;
+    justify-content: flex-start;
+}
+.menu7 {
+    bottom: -65%;
+    left: -1%;
+    justify-content: flex-start;
+}
+.menu8 {
+    top: -7%;
+    left: 10px;
+    justify-content: flex-start;
+}
+
+
+.menu1, .menu7, .menu8, .menu6{
+    text-align: right;
+
+}
+.menu1 .menuBox,
+.menu7 .menuBox,
+.menu8 .menuBox,
+.menu6 .menuBox  {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+.menu1::before, 
+.menu2::before, 
+.menu3::before, 
+.menu4::before, 
+.menu5::before, 
+.menu6::before, 
+.menu7::before, 
+.menu8::before{
+    content: "";
+    position: absolute;
+    width: 65%;
+    height: 85%;
+    border-style: solid;
+    border-color: black;
+}
+.menu1::before {
+    right: -15%;
+    top: 10px;
+    transform: skewX(40deg);
+    border-width: 1px 1px 0 0;
+}
+
+.menu2::before {
+    left: -13%;
+    top: 10px;
+    transform: skewX(-40deg);
+    border-width: 1px 0 0 1px;
+}
+.menu3::before {
+    left: 0%;
+    top: 10px;
+    transform: skewX(-40deg);
+    border-width: 1px 0 0 1px;
+}
+ 
+.menu4::before {
+    left: 5%;
+    bottom: 85%;
+    transform: skewX(40deg) rotateX(180deg);
+    border-width: 1px 0px 0 1px;
+}
+ 
+.menu5::before {
+    left: -13%;
+    bottom: 85%;
+    transform: skewX(40deg) rotateX(180deg);
+    border-width: 1px 0px 0 1px;
+}
+ 
+.menu6::before {
+    right: -13%;
+    bottom: 85%;
+    transform: skewX(-40deg) rotateX(180deg);
+    border-width: 1px 1px 0 0;
+}
+ 
+.menu7::before {
+    right: 0%;
+    bottom: 85%;
+    transform: skewX(-40deg) rotateX(180deg);
+    border-width: 1px 1px 0 0;
+}
+.menu8::before {
+    right: 2%;
+    top: 10px;
+    transform: skewX(40deg);
+    border-width: 1px 1px 0 0;
+}
+.arrowRight{
+    width:20px; 
+    transform: rotate(40deg);
+    margin-top: 10px;
+} 
+.logoText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+    text-align: center;
+}
+.logoText img{
+        height: 125px;
+        width: 100%;
+        object-fit: cover;
+}
+.logoText p {
+    font-size: 19px;
+    margin-bottom: 11px;
+    font-weight: 300;
+    max-width: 500px;
+    font-family: helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif;
+}
+
+.phoneMenu{
+    padding:50px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.phoneMenu .mobilemenu{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.phoneMenu .mobilemenu img{
+    max-width: 200px;
+}
+.phoneMenu .mobilemenu ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+    gap: 5px;
+}
+.phoneMenu .mobilemenu a{
+text-decoration: none;
+font-size: 16px;
+color: #000000;
+}
+.phoneMenu .mobilemenu a:hover{
+    text-decoration: underline;
+}
+.phoneMenu{
+    display: none;
+}
+@media(max-width: 767px){
+    .vh{
+        display: none;
+    }
+    .phoneMenu{
+        display: flex;
+    }
+    .logoText{
+        margin-bottom: 20px;
+    }
+    .logoText p {
+        font-size: 14px;
+        margin-bottom: 10px;
+        font-weight: 300;
+        max-width: 500px;
+        font-family: helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif;
+    }
+}
