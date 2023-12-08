@@ -34,18 +34,18 @@ body{
  
 .ball {
     position: absolute;
-    width: 20px;
-    height: 20px; 
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
     overflow: hidden;
+    background-color: #fff;
 }
 .ball::after{
     content: "";
     width: 100%;
     height: 100%;
     bottom: 0;
-    right: 0;
-    background-color: #000000;
+    right: 0; 
     position: absolute;
     transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     opacity: 0;
@@ -58,32 +58,32 @@ body{
 
 }
 .ball1 {
-    top: 18.2%;
-    left: 41.4%;
-    transform: translate(-41.4%, -18.2%);
+    top: 18.5%;
+    left: 41.5%;
+    transform: translate(-41.5%, -18.5%);
 }
 .ball2{
-    top: 18.2%;
+    top: 18.5%;
     right: 39.8%;
-    transform: translate(39.8%, -18.2%);
+    transform: translate(39.8%, -18.5%);
 }
 
 
 
 .ball3 {
     top: 37.6%;
-    right: 26.5%;
-    transform: translate(26.5%, -37.6%);
+    right: 26.6%;
+    transform: translate(26.6%, -37.6%);
 }
 .ball4 {
     bottom: 35.4%;
-    right: 26.5%;
-    transform: translate(26.5%,  35.4%);
+    right: 26.6%;
+    transform: translate(26.6%,  35.4%);
 }
 .ball5 {
-    bottom: 16%;
+    bottom: 16.3%;
     right: 39.8%;
-    transform: translate(39.8%, 16%);
+    transform: translate(39.8%, 16.3%);
 }
 .ball6 {
     bottom: 16.2%;
@@ -94,15 +94,39 @@ body{
 
 .ball7 {
     bottom: 35.5%;
-    left: 28.1%;
-    transform: translate(-28.1%,  35.5%);
+    left: 28.2%;
+    transform: translate(-28.2%,  35.5%);
 }
 .ball8{
     top: 37.7%;
-    left: 28.1%;
-    transform: translate(-28.1%, -37.7%);
+    left: 28.2%;
+    transform: translate(-28.2%, -37.7%);
 }
 
+.ball2::after{
+    background-color: #6E0000;
+}
+.ball3::after{
+    background-color: #6E0000;
+}
+.ball4::after{
+    background-color: #8C8C00;
+}
+.ball5::after{
+    background-color: #006B00;
+}
+.ball6::after{
+    background-color: #006666;
+}
+.ball7::after{
+    background-color: #3B007F;
+}
+.ball8::after{
+    background-color: #6B006B;
+}
+.ball1::after{
+    background-color: #FFFFFF;
+}
 .logoMenu {
     position: relative;
     width: 100%;
@@ -118,7 +142,7 @@ body{
  .menuBox {
     background: white;
     z-index: 1;
-    padding: 0 20px;
+    padding: 0 8px;
     text-decoration: none;
  }
  .menuBox h3{
@@ -128,11 +152,15 @@ body{
 }
 .menuBox p{
     font-size: 17px;
-    max-width: 160px;
+    max-width: 320px;
     font-weight: 400;
     color: #5c5c5c;
 }
+.logoText p strong{ 
+    color: #008484;
+    font-weight: 400;
 
+} 
 .menu {
     position: absolute;
     max-width: 470px;
@@ -148,44 +176,44 @@ body{
 
 }
 .menu1{
-    top: -25%;
-    left: 0;
+    top: 4%;
+    left: 5px;
     justify-content: flex-start;
 }
 
 .menu2{
-    top: -20%;
-    right: 0;
+    top: 4%;
+    right: 6px;
     justify-content: flex-end;
 }
 .menu3 {
-    top: 2%;
+    top: 23%;
     right: 0%;
     justify-content: flex-end;
 }
 .menu4 {
-    bottom: -55%;
+    bottom: -20%;
     right: 0%;
     justify-content: flex-end;
 }
 .menu5 {
-    bottom: -65%;
-    right: 0%;
+    bottom: -38%;
+    right: 3%;
     justify-content: flex-end;
 }
 .menu6 {
-    bottom: -35%;
-    left: 2%;
+    bottom: -14%;
+    left: 1%;
     justify-content: flex-start;
 }
 .menu7 {
-    bottom: -65%;
-    left: -1%;
+    bottom: -10%;
+    left: 1%;
     justify-content: flex-start;
 }
 .menu8 {
-    top: -7%;
-    left: 10px;
+    top: 23%;
+    left: 24px;
     justify-content: flex-start;
 }
 
@@ -214,63 +242,63 @@ body{
 .menu8::before{
     content: "";
     position: absolute;
-    width: 65%;
-    height: 85%;
+    width: 120px;
+    height: 40px;
     border-style: solid;
     border-color: black;
 }
 .menu1::before {
     right: -15%;
     top: 10px;
-    transform: skewX(40deg);
-    border-width: 1px 1px 0 0;
+    transform: skewX(70deg);
+    border-width: 1px 2px 0 0;
 }
 
 .menu2::before {
     left: -13%;
     top: 10px;
-    transform: skewX(-40deg);
-    border-width: 1px 0 0 1px;
+    transform: skewX(-70deg);
+    border-width: 1px 0 0 2px;
 }
 .menu3::before {
-    left: 0%;
+    left: -1%;
     top: 10px;
-    transform: skewX(-40deg);
-    border-width: 1px 0 0 1px;
+    transform: skewX(-70deg);
+    border-width: 1px 0 0 2px;
 }
  
 .menu4::before {
-    left: 5%;
-    bottom: 85%;
-    transform: skewX(40deg) rotateX(180deg);
-    border-width: 1px 0px 0 1px;
+    left: -1%;
+    bottom: 90%;
+    transform: skewX(70deg) rotateX(180deg);
+    border-width: 1px 0px 0 2px;
 }
  
 .menu5::before {
-    left: -13%;
-    bottom: 85%;
-    transform: skewX(40deg) rotateX(180deg);
-    border-width: 1px 0px 0 1px;
+    left: -6%;
+    bottom: 90%;
+    transform: skewX(70deg) rotateX(180deg);
+    border-width: 1px 0px 0 2px;
 }
  
 .menu6::before {
     right: -13%;
     bottom: 85%;
-    transform: skewX(-40deg) rotateX(180deg);
-    border-width: 1px 1px 0 0;
+    transform: skewX(-70deg) rotateX(180deg);
+    border-width: 1px 2px 0 0;
 }
  
 .menu7::before {
     right: 0%;
     bottom: 85%;
-    transform: skewX(-40deg) rotateX(180deg);
-    border-width: 1px 1px 0 0;
+    transform: skewX(-70deg) rotateX(180deg);
+    border-width: 1px 2px 0 0;
 }
 .menu8::before {
     right: 2%;
     top: 10px;
-    transform: skewX(40deg);
-    border-width: 1px 1px 0 0;
+    transform: skewX(70deg);
+    border-width: 1px 2px 0 0;
 }
 .arrowRight{
     width:20px; 
@@ -281,19 +309,20 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 700px;
+    max-width: 1190px;
     text-align: center;
 }
 .logoText img{
         height: 125px;
         width: 100%;
         object-fit: cover;
+        max-width: 500px;
 }
 .logoText p {
-    font-size: 19px;
+    font-size: 28px;
     margin-bottom: 11px;
     font-weight: 300;
-    max-width: 500px;
+    max-width: 1080px;
     font-family: helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif;
 }
 
