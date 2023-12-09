@@ -193,22 +193,22 @@ body{
     justify-content: flex-end;
 }
 .menu4 {
-    bottom: -20%;
+    bottom: -24%;
     right: 0%;
     justify-content: flex-end;
 }
 .menu5 {
-    bottom: -38%;
+    bottom: -42%;
     right: 3%;
     justify-content: flex-end;
 }
 .menu6 {
-    bottom: -14%;
+    bottom: -18%;
     left: 1%;
     justify-content: flex-start;
 }
 .menu7 {
-    bottom: -10%;
+    bottom: -15%;
     left: 1%;
     justify-content: flex-start;
 }
