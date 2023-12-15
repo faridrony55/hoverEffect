@@ -147,15 +147,18 @@ body{
     text-decoration: none;
  }
  .menuBox h3{
-    font-size:20px ;
-    font-weight: 400;
+    font-size: 22px;
+    font-weight: 600;
     color: #333;
+    font-family: 'Source Code Pro', monospace;
 }
 .menuBox p{
-    font-size: 17px;
     max-width: 320px;
     font-weight: 400;
     color: #5c5c5c;
+    font-family: helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif;
+    font-size: 18px;
+    line-height: 1.4em;
 }
 .logoText p strong{ 
     color: #008484;
