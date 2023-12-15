@@ -151,6 +151,7 @@ body{
     font-weight: 600;
     color: #333;
     font-family: 'Source Code Pro', monospace;
+    text-transform: uppercase;
 }
 .menuBox p{
     max-width: 320px;
@@ -201,12 +202,12 @@ body{
     justify-content: flex-end;
 }
 .menu5 {
-    bottom: -42%;
-    right: 3%;
+    bottom: -34%;
+    right: 4%;
     justify-content: flex-end;
 }
 .menu6 {
-    bottom: -18%;
+    bottom: -20%;
     left: 1%;
     justify-content: flex-start;
 }
