@@ -369,6 +369,31 @@ color: #000000;
 .phoneMenu{
     display: none;
 }
+.btnCustom{
+    transition: all 0.2s ease, visibility 0s;
+    background: #222222;
+    border-radius: 5px;
+    color: #ffffff;
+    border: 1px solid #222222;
+    width: 266px;
+    height: 64px;
+    font-size: 18px;
+    font-weight: 700;
+    align-items: center;
+    display: flex;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    flex-basis: auto;
+    flex-direction: row;
+    flex-grow: 1; 
+    justify-content: center;
+    text-decoration: none;
+}
+.btnCustom:hover {
+    background: #FFFFFF;
+    color: #222222;
+}
 @media(max-width: 767px){
     .vh{
         display: none;
