@@ -382,8 +382,7 @@ color: #000000;
     align-items: center;
     display: flex;
     margin-top: 20px;
-    
-    text-transform: lowercase;
+     
     font-weight: 600;
     flex-basis: auto;
     flex-direction: row;
