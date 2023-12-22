@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Liberation Sans';
+    src: url('LiberationSans-Regular.woff2') format('woff2'),
+        url('LiberationSans-Regular.woff') format('woff'),
+        url('LiberationSans-Regular.svg#LiberationSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

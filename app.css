@@ -1,4 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: 'Liberation Sans';
+    src: url('font/LiberationSans-Regular.woff2') format('woff2'),
+        url('font/LiberationSans-Regular.woff') format('woff'),
+        url('font/LiberationSans-Regular.svg#LiberationSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -330,7 +342,7 @@ body{
     margin-bottom: 11px;
     font-weight: 300;
     max-width: 1080px;
-    font-family: helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif;
+    font-family: 'Liberation Sans';
 }
 
 .phoneMenu{
@@ -358,11 +370,7 @@ body{
     text-align: center;
     gap: 5px;
 }
-.phoneMenu .mobilemenu a{
-text-decoration: none;
-font-size: 16px;
-color: #000000;
-}
+.phoneMenu .mobilemenu a{text-decoration: none;font-size: 16px;color: #ffffff;width: auto;height: auto;padding: 10px 30px;margin-top: 0;}
 .phoneMenu .mobilemenu a:hover{
     text-decoration: underline;
 }
@@ -382,11 +390,11 @@ color: #000000;
     align-items: center;
     display: flex;
     margin-top: 20px;
-    text-transform: lowercase;
+    /* text-transform: lowercase; */
     font-weight: 600;
     flex-basis: auto;
     flex-direction: row;
-    flex-grow: 1; 
+    flex-grow: 1;
     justify-content: center;
     text-decoration: none;
 }
